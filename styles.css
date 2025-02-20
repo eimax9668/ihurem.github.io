@@ -1,3 +1,4 @@
+html{background-color: #fff;}
 *{
   margin:0;
   padding:0;
@@ -188,3 +189,15 @@ details{
     transition: 0.3s;
     background-color: #026ba0;
   }
+
+  code {
+    display: block;
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+
+  }
+  
