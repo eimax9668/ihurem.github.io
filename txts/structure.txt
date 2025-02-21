@@ -1,0 +1,11 @@
+<p>
+Ihurem displays the text of some pages in a special way to prevent them from being filtered out for reasons such as filter evasion.
+<br>
+Texts containing words to be blocked are stored in a separate folder.<br><br>
+<code>fetch('txts/intro.txt')<br>
+    .then(response => response.text())<br>
+    .then(text => {<br>
+    document.getElementById('introtxt').innerHTML = text;<br>
+    });</code><br>
+    Filtering is not blocked because it cannot refer to the txt file.<br><br>
+</p>

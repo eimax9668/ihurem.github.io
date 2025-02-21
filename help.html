@@ -5,45 +5,52 @@
   <title>Ihurem</title>
   <link rel="stylesheet" href="../styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-<link rel="icon" href="favicon.ico">
-<link rel="apple-touch-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="favicon.ico">
+  <script src="showtxt.js"></script>
 </head>
+
 <body>
-    <header>
-        <a href="index.html">About</a>
-        <a href="use.html">Ihurem</a>
-        <a href="#">Help</a>
-      </header>
-      <div class="help">
-        <h1>Help</h1>
-        <h2>I can't see the proxy site.</h2>
-        <p>Ihurem is only a site for bypassing unreasonable filtering.<br> If you are looking for a complete filter avoidance, you can use other sites than this one.</p>
-        <h2>Where the name comes from?</h2>
-        <p>My friend called iframe “Ihurem”.</p>
-        <h2>Sometimes the connection is refused.</h2>
-<p>Sometimes this happens for security reasons. Many sites, especially large ones, try to protect themselves from malicious attacks,
-  They do not allow other sites to embed their own content.
-  This prevents phishing and cross-site scripting (XSS) attacks.<br>
-  (It could also be a typo in the URL.)</p>
-        <h1>Structure</h1>
-        <p>How does Ihurem work?
-          Magic or super powers... Not. Ihurem is powered by <strong>Javascript</strong>.</p><br>
-          <code>const urlInput = document.getElementById('url-input');<br>
+  <header>
+    <a href="index.html">About</a>
+    <a href="use.html">Ihurem</a>
+    <a href="#">Docs</a>
+  </header>
+  <div class="help">
+    <h1>Help</h1>
+    <h2>I can't see the proxy site.</h2>
+    <p>Ihurem is only a site for bypassing unreasonable filtering.<br> If you are looking for a complete filter
+      avoidance, you can use other sites than this one.</p>
+    <h2>Where the name comes from?</h2>
+    <p>My friend called iframe “Ihurem”.</p>
+    <h2>Sometimes the connection is refused.</h2>
+    <p>Sometimes this happens for security reasons. Many sites, especially large ones, try to protect themselves from
+      malicious attacks,
+      They do not allow other sites to embed their own content.
+      This prevents phishing and cross-site scripting (XSS) attacks.<br>
+      (It could also be a typo in the URL.)</p>
+    <h1>Structure</h1>
+    <h2>How does Ihurem work?</h2>
+    <p>
+      Magic or super powers... Not. Ihurem is powered by <strong>Javascript</strong>.</p><br>
+    <code>const urlInput = document.getElementById('url-input');<br>
             const displayButton = document.getElementById('display-button');
             const iframeArea = document.getElementById('iframe-area');
             </code><br>
-            <p>It takes an HTML element and defines it as a variable.</p><br>
-            <code>const blacklist = [<br>
+    <p>It takes an HTML element and defines it as a variable.</p><br>
+    <code>const blacklist = [<br>
               'https://proxysite.com',<br>
               'https://www.croxyproxy.rocks/_ja/',<br>
               'https://proxyium.com/ja/',<br>
               'https://www.blockaway.net/_ja/'<br>
             ];
             </code><br>
-            <p>This defines the blacklist.</p><br>
-            <code>
+    <p>This defines the blacklist.</p><br>
+    <code>
               displayButton.addEventListener('click', () =&gt; {<br>
                 const url = urlInput.value;<br>
                 <br>
@@ -54,9 +61,13 @@
                 }<br>
               });<br>
               </code><br>
-              <p>Get the URL entered in the text box when the “Show” button is clicked.<br>
-                If the URL is incorrect or blacklisted, an error message is displayed; if the URL is correct, a web page with that URL is displayed in the iframe.</p>
-                <br>
-      </div>
+    <p>Get the URL entered in the text box when the “Show” button is clicked.<br>
+      If the URL is incorrect or blacklisted, an error message is displayed; if the URL is correct, a web page with that
+      URL is displayed in the iframe.</p>
+    <br>
+    <h2>Why Ihurem itself is not blocked</h2>
+    <div id="structuretxt"></div>
+  </div>
 </body>
+
 </html>
